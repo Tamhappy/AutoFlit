@@ -1,0 +1,8 @@
+{
+    "servers": {
+      "figma": {
+        "command": "figma-mcp-server",
+        "args": []
+      }
+    }
+  }

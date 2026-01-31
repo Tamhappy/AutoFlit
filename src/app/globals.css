@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Autoflit Light Theme — All HSL */
+    --background: 40 13% 97%;            /* #FAFAF9 */
+    --foreground: 0 0% 18%;              /* #2F2F2F */
+
+    --card: 40 10% 99%;               /* A slightly lighter card */
+    --card-foreground: 0 0% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+
+    --primary: 10 100% 68%;              /* #FF6F61 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 60 9% 88%;              /* #E2E2DF */
+    --secondary-foreground: 0 0% 18%;
+
+    --muted: 0 0% 42%;                   /* #6A6A6A */
+    --muted-foreground: 0 0% 63%;        /* #A0A0A0 */
+
+    --accent: 120 28% 91%;               /* #EAF1EA */
+    --accent-foreground: 0 0% 18%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 60 9% 88%;                 /* #E2E2DF */
+    --input: 60 9% 88%;
+    --ring: 10 100% 68%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
